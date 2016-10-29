@@ -2,3 +2,7 @@ sudo apt-get install dnsmasq hostapd
 sudo cp hostapd.conf /etc/hostapd.d/hostapd.conf
 sudo cp dnsmasq.conf /etc/dnsmasq.d/dnsmasq.conf
 sudo cp interfaces /etc/network/interfaces
+sudo cp rc.local /etc/rc.local
+sudo cp hostapd /etc/default/hostapd
+echo "denyinterfaces wlan0" | sudo tee --append /etc/dhcpcd.conf
+echo "net.ipv4.ip_forward=1" | sudo tee --append /etc/sysctl.conf
