@@ -8,3 +8,5 @@ Give Wifi access from wired ethernet:
 Give Wifi access from another Wifi AP (e.g. BTWiFi-with-FON)
 
     iptables-restore < iptables.ipv4.nat.wlan1
+    
+Ready made SD .img at https://sourceforge.net/projects/pi-ap/
