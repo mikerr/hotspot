@@ -1,10 +1,14 @@
 # hotspot
 Create a wifi hotspot 
 
-Give Wifi access from wired ethernet:
+Provide Wifi access from wired ethernet (Access Point)
 
     iptables-restore < iptables.ipv4.nat.eth0
 
+Provide wired ethernet access from wifi (gaming adaptor)
+
+    iptables-restore < iptables.ipv4.nat.to-eth0
+    
 Give Wifi access from another Wifi AP (e.g. BTWiFi-with-FON)
 
     iptables-restore < iptables.ipv4.nat.wlan1
