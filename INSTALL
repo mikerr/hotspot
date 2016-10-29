@@ -2,3 +2,4 @@ sudo apt-get install dnsmasq hostapd
 sudo cp hostapd.conf /etc/hostapd.d/hostapd.conf
 sudo cp dnsmasq.conf /etc/dnsmasq.d/dnsmasq.conf
 sudo cp interfaces /etc/network/interfaces
+sudo cp rc.local /etc/rc.local
